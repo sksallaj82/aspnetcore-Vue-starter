@@ -78,7 +78,7 @@ Run the application in VSCode or Visual Studio 2019 by hitting `F5`.
 ## View your application running
 When running the app using debug menu or `F5` VS open auto the app in the browser;
 
-## Notes ##
+## Notes
 
 This project has 5 possible environments set up as follows:
 
