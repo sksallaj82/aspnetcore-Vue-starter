@@ -1,0 +1,11 @@
+@using Web.Extensions
+@model Web.Controllers.HomeController.IndexFile
+
+@{ ViewData["Title"] = "Home Page";
+    <environment include="_, _d">
+        @Model.Value.ToHtmlString()
+    </environment>
+    <environment include="Development,Staging,Production">
+        @Model.Value.ToHtmlString()
+    </environment>
+}
