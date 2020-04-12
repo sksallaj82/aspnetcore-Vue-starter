@@ -1,6 +1,6 @@
 # ASP.NET Core & Vue.js Starter
 
-This is a fork of the template made by TrilonIO, please read through this as this forked project has deviated completely to support and add different direction.
+This is a fork of the template made by TrilonIO, please read through this as this forked project has deviated completely to support and add different direction. For any help on this project, please don't go to TrilonIO for help, I will try my best to help out with any confusions. This is a Forked repo, but it's took a radically new direction.
 
 Differences:
 Upgraded to ASP Core 3.1 (was 2.2)
@@ -19,19 +19,6 @@ Starter Template for ASP.NET Core and Vue.JS (Vue) - with Webpack (with HMR), We
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge&color=e51384)](/LICENSE) 
 
 ---
-
-<br>
-<p align="center">
-  <a href="https://trilon.io" target="_blank">
-        <img width="500" height="auto" src="https://trilon.io/trilon-logo-clear.png" alt="Trilon.io - Angular Universal, NestJS, JavaScript Application Consulting Development and Training">
-  </a>
-</p>
-
-
-<h3 align="center"> Made with :heart: by <a href="https://trilon.io">Trilon.io</a></h3>
-
----
-
 
 # Table of Contents
 
@@ -138,7 +125,7 @@ Copyright (c) 2020 [Sultan Sallaj](https://github.com/sksallaj82)
 
 ----
 
-# Trilon - Vue, Asp.NET, NodeJS - Consulting | Training | Development
+# Credits - Trilon - Vue, Asp.NET, NodeJS - Consulting | Training | Development
 
 Check out **[Trilon.io](https://Trilon.io)** for more info! 
 
