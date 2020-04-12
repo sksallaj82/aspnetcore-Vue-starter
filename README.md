@@ -1,8 +1,18 @@
 # ASP.NET Core & Vue.js Starter
 
+This is a fork of the template made by TrilonIO, please read through this as this forked project has deviated completely to support and add different direction.
+
+Differences:
+Updated to ASP Core 3.1
+Added Vue CLI, which abstracts away many of the plumbing that the previous project did with webpack 4
+Added SPA integrations - please read on for more info
+Split the project into Web and Data (Web API)
+
+---
+
 Starter Template for ASP.NET Core and Vue.JS (Vue) - with Webpack (with HMR), Web API, Vuex state manangement and other best-practices baked in! 
 
-> Written in ES6, TypeScript version coming soon!
+> Written in ES.
 
 [![Nuget](https://img.shields.io/nuget/v/aspnetcore-vuejs.svg?style=for-the-badge&color=5b1096)](https://www.nuget.org/packages/aspnetcore-vuejs/)
 [![Nuget Downloads](https://img.shields.io/nuget/dt/aspnetcore-vuejs.svg?label=Nuget%20Downloads&style=for-the-badge&color=b31ae7)](https://www.nuget.org/packages/aspnetcore-vuejs/)
@@ -34,11 +44,11 @@ Starter Template for ASP.NET Core and Vue.JS (Vue) - with Webpack (with HMR), We
 
 # Features
 
-- **ASP.NET Core 2.2**
+- **ASP.NET Core 3.1**
   - Web API
 - **VueJS 2**
   - Vuex (State Store)
-- **Webpack**
+- **Vue CLI**
   - HMR (Hot Module Replacement/Reloading)
 - **Bootstrap 4**
 
@@ -49,37 +59,9 @@ Starter Template for ASP.NET Core and Vue.JS (Vue) - with Webpack (with HMR), We
 
 # Installation:
 
-### Nuget | Dotnet Templates
+Clone this Repo itself
 
-Find the template through NuGet package manager inside Visual Studio or [here](https://www.nuget.org/packages/aspnetcore-vuejs)
-
-> Or download it via dotnet templates
-
-```ts
-// Make a directory where you want the project
-mkdir my-vue-starter && cd my-vue-starter
-
-// Download the dotnet template
-dotnet new -i aspnetcore-vuejs
-
-// Run and install the template
-dotnet new vuejs
-
-// Make sure you install the dependencies
-npm install
-```
-
-Now you can open the project via Visual Studio or VSCode, press F5 to run the application!
-
-Note: 
-
-* This will automatically run `dotnet restore` unless you install with `dotnet new vuejs --skipRestore`
-* ([Official documentation](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-new?tabs=netcore2x))
-   * This will automatically run `dotnet restore` unless you install with `dotnet new vuejs --skipRestore`
-
-### -OR- Clone this Repo itself
-
- * Clone this repository : `$ git clone https://github.com/MarkPieszak/aspnetcore-Vue-starter.git VueWeb`
+ * Clone this repository : `$ git clone https://github.com/sksallaj82/aspnetcore-Vue-starter.git VueWeb`
  * `$ cd VueWeb/content`
  * `$ dotnet restore && npm install`
  * (If using VSCode) `$ code .` 
