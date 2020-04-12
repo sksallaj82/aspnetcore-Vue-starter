@@ -123,7 +123,7 @@ Copyright (c) 2020 [Sultan Sallaj](https://github.com/sksallaj82)
 
 ----
 
-# Credits - Trilon - Vue, Asp.NET, NodeJS - Consulting | Training | Development
+# Credits - TrilonIO - Vue, Asp.NET, NodeJS - Consulting | Training | Development
 
 Check out **[Trilon.io](https://Trilon.io)** for more info! 
 
