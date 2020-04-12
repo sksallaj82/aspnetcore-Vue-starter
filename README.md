@@ -78,7 +78,6 @@ Run the application in VSCode or Visual Studio 2019 by hitting `F5`.
 ## View your application running
 When running the app using debug menu or `F5` VS open auto the app in the browser;
 
-
 ## Notes ##
 
 This project has 5 possible environments set up as follows:
@@ -93,8 +92,12 @@ developement : dev environment shared
     * Before you switch to this environment, run "npm run build:staging" in ClientApp/src. Use this for integrating systems on the staging machine, where you test the application on a machine that looks as close to production ready as possible
 * prod : production environment shared
     * Before you switch to this environment, run "npm run build:staging" in ClientApp/src. Use this for integrating systems on the production machine.
+    
+It is recommended to use the follow modes for the environements:
+* Debug mode for _ and _d
+* Release mode for development, staging, production
 
-When you run npm run build:<env>, this builds the files into wwwroot/dist, and the project will make use of the files located there as its injected into an MVC view (cshtml). These types of builds are needed since MVC controllers would be enabled and used. It's only for _d, dev, staging, and prod only. The _ environment doesn't look at wwwroot/dist, it's a special local case.
+When you run "npm run build:<env>", this builds the files into wwwroot/dist, and the project will make use of the files located there as its injected into an MVC view (cshtml). These types of builds are needed since MVC controllers would be enabled and used. It's only for _d, dev, staging, and prod only. The _ environment doesn't look at wwwroot/dist, it's a special local case.
   
 This is meant to be flexibile, if you ever want to change the way these environments are set up, this is hooked in the following files:
 * Web/ClientApp/src/package.json
@@ -103,12 +106,14 @@ This is meant to be flexibile, if you ever want to change the way these environm
     * This looks at environments to configure environment paths
 * Web/ClientApp/src/env.*
     * This is Vue Cli's way of picking environments, you can read more about it here: [Vue Cli - Mode and Env](https://cli.vuejs.org/guide/mode-and-env.html)
-* Web/Properties/launchSettings.json
+* Web/Properties/launchSettings.json OR Data/Properties/launchSettings.json
     * We use these specific profiles on VS Studio 2019, to switch environments via IDE. You'd unfortunately also have to manually run "npm run build _d" in ClientApp/src file, if you want to test the _d environemt
+* Web/Startup.cs OR Data/Startup.cs
+    * This is where we separate between looking at the static SPA files versus injecting them into an MVC view. The application is made to be flexible to allow you to decide whether you want to use MVC and SPA together. The only mode that neglects MVC controllers and views is the _ environment, and only enables the SPA application.
     
-
+The only time the website ever fetches data from the application is when you click "Data" on the website. If this doesn't work, make sure Data project has started with the Web project.
     
-----
+---
 
 # Demo of Application Running
 
