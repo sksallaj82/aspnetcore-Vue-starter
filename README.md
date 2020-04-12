@@ -1,12 +1,12 @@
 # ASP.NET Core & Vue.js Starter
 
-This is a fork of the template made by TrilonIO, please read through this as this forked project has deviated completely to support and add different direction. For any help on this project, please don't go to TrilonIO for help, I will try my best to help out with any confusions. This is a Forked repo, but it's took a radically new direction.
+This is a fork of the template made by TrilonIO, please read through this as this forked project has deviated completely to support and add different direction. For any help on this project, please don't go to TrilonIO for help, I will try my best to help out with any confusions. This is a forked repo, but it's took a radically new direction.
 
-Differences:
-Upgraded to ASP Core 3.1 (was 2.2)
-Added Vue CLI, which abstracts away many of the plumbing that the previous project did with webpack 4
-Added SPA integrations - please read the section "Notes" for more info
-Split the project into Web and Data (Web API) - Was all part of the same applicatoin
+## Differences:
+* Upgraded to ASP Core 3.1 (was 2.2)
+* Added Vue CLI, which abstracts away many of the plumbing that the previous project did with webpack 4
+* Added SPA integrations - please read the section "Notes" for more info
+* Split the project into Web and Data (Web API) - Was all part of the same applicatoin
 
 ---
 
