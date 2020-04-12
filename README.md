@@ -53,9 +53,9 @@ Starter Template for ASP.NET Core and Vue.JS (Vue) - with Webpack (with HMR), We
 - **Bootstrap 4**
 
 # Prerequisites:
- * [.Net Core 2.2](https://www.microsoft.com/net/download/windows)
+ * [.Net Core 3.1](https://www.microsoft.com/net/download/windows)
  * [NodeJS](https://nodejs.org/) >= 10.x
- * [VSCode](https://code.visualstudio.com/) (ideally), or VS2017
+ * [VSCode](https://code.visualstudio.com/) (ideally), or VS2019
 
 # Installation:
 
