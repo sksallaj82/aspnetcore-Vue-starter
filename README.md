@@ -69,17 +69,45 @@ Clone this Repo itself
 
 
 ## Start the application:
-You have two choices when it come at how your preffer to run it. You can either use the command line or the build-in run command.
-
-### 1. Using the command line
-Run the application using `npm run dev`.
+This is manual for now. Navigate to content\Web\ClientApp and double click the file "install-website.bat" and wait for everything to be completed.
  
-### 2. Using the built-in run command
-Run the application in VSCode or Visual Studio 2017 by hitting `F5`.
+### 1. Using the built-in run command
+Right click the solution and click "Set Startup Projects" and make sure you select "Multiple Start up Projects" for both Data and Web.
+Run the application in VSCode or Visual Studio 2019 by hitting `F5`.
 
 ## View your application running
 When running the app using debug menu or `F5` VS open auto the app in the browser;
 
+
+## Notes ##
+
+This project has 5 possible environments set up as follows:
+
+* _ : local environment
+    * Using this will look at the static files found in ClientApp/public, in this mode you have Hot reload since it spins up a seperate server on port 8080. In this mode, none of the MVC controllers on the Web project are being used. Use this mode for developing the web interface's look and feel.
+* _d : local dev environment
+    * Before you switch to this environment, run "npm run build:_d" in ClientApp/src. Use this for integrating systems on the local machine, like authentication for example.
+developement : dev environment shared
+    * Before you switch to this environment, run "npm run build:dev" in ClientApp/src. Use this for integrating systems on the dev machine, where you can have multiple developers, and other users testing the system.
+* staging : staging environment shared
+    * Before you switch to this environment, run "npm run build:staging" in ClientApp/src. Use this for integrating systems on the staging machine, where you test the application on a machine that looks as close to production ready as possible
+* prod : production environment shared
+    * Before you switch to this environment, run "npm run build:staging" in ClientApp/src. Use this for integrating systems on the production machine.
+
+When you run npm run build:<env>, this builds the files into wwwroot/dist, and the project will make use of the files located there as its injected into an MVC view (cshtml). These types of builds are needed since MVC controllers would be enabled and used. It's only for _d, dev, staging, and prod only. The _ environment doesn't look at wwwroot/dist, it's a special local case.
+  
+This is meant to be flexibile, if you ever want to change the way these environments are set up, this is hooked in the following files:
+* Web/ClientApp/src/package.json
+    * This holds all the scripts definition
+* Web/ClientApp/src/vue.config.js
+    * This looks at environments to configure environment paths
+* Web/ClientApp/src/env.*
+    * This is Vue Cli's way of picking environments, you can read more about it here: [Vue Cli - Mode and Env](https://cli.vuejs.org/guide/mode-and-env.html)
+* Web/Properties/launchSettings.json
+    * We use these specific profiles on VS Studio 2019, to switch environments via IDE. You'd unfortunately also have to manually run "npm run build _d" in ClientApp/src file, if you want to test the _d environemt
+    
+
+    
 ----
 
 # Demo of Application Running
