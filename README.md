@@ -3,10 +3,10 @@
 This is a fork of the template made by TrilonIO, please read through this as this forked project has deviated completely to support and add different direction.
 
 Differences:
-Updated to ASP Core 3.1
+Upgraded to ASP Core 3.1 (was 2.2)
 Added Vue CLI, which abstracts away many of the plumbing that the previous project did with webpack 4
-Added SPA integrations - please read on for more info
-Split the project into Web and Data (Web API)
+Added SPA integrations - please read the section "Notes" for more info
+Split the project into Web and Data (Web API) - Was all part of the same applicatoin
 
 ---
 
@@ -112,14 +112,6 @@ This is meant to be flexibile, if you ever want to change the way these environm
     * This is where we separate between looking at the static SPA files versus injecting them into an MVC view. The application is made to be flexible to allow you to decide whether you want to use MVC and SPA together. The only mode that neglects MVC controllers and views is the _ environment, and only enables the SPA application.
     
 The only time the website ever fetches data from the application is when you click "Data" on the website. If this doesn't work, make sure Data project has started with the Web project.
-    
----
-
-# Demo of Application Running
-
-![](./content/repo-example.png)
-
----
 
 # Recommended plugin for debugging VueJS
 
@@ -142,9 +134,7 @@ _Looking for ASP.NET Core & Angular 7.x+ Universal starter? [click here](https:/
 
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge&color=e51384)](/LICENSE) 
 
-Copyright (c) 2016-2019 [Mark Pieszak](https://github.com/MarkPieszak)
-
-[![Twitter Follow](https://img.shields.io/twitter/follow/MarkPieszak.svg?style=social)](https://twitter.com/MarkPieszak)
+Copyright (c) 2020 [Sultan Sallaj](https://github.com/sksallaj82)
 
 ----
 
