@@ -1,4 +1,4 @@
-# ASP.NET Core & Vue.js Starter
+# ASP.NET Core 3.1 & Vue CLI 4.+ Starter Kit
 
 This is a fork of the template made by TrilonIO, please read through this as this forked project has deviated completely to support and add different direction. For any help on this project, please don't go to TrilonIO for help, I will try my best to help out with any confusions. This is a forked repo, but it's took a radically new direction.
 
