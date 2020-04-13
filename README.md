@@ -30,11 +30,12 @@ Starter Template for ASP.NET Core and Vue.JS (Vue) - with Webpack (with HMR), We
 # Features
 
 - **ASP.NET Core 3.1**
-  - Web API
+  - Web API + ASP MVC
 - **VueJS 2**
   - Vuex (State Store)
 - **Vue CLI**
   - HMR (Hot Module Replacement/Reloading)
+  - Vue CLI >= 4.0
 - **Bootstrap 4**
 
 # Prerequisites:
@@ -124,6 +125,8 @@ Copyright (c) 2020 [Sultan Sallaj](https://github.com/sksallaj82)
 ----
 
 # Credits - TrilonIO - Vue, Asp.NET, NodeJS - Consulting | Training | Development
+
+This forked repo couldn't have been created without TrilonIO's contribution to the "Asp.net Core & Vue.js (ES6) SPA Starter kit".
 
 Check out **[Trilon.io](https://Trilon.io)** for more info! 
 
