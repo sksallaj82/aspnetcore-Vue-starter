@@ -71,13 +71,13 @@ This project has 5 possible environments set up as follows:
 * _ : local environment
     * Using this will look at the static files found in ClientApp/public, in this mode you have Hot reload since it spins up a seperate server on port 8080. In this mode, none of the MVC controllers on the Web project are being used. Use this mode for developing the web interface's look and feel.
 * _d : local dev environment
-    * Before you switch to this environment, run "npm run build:_d" in ClientApp/src. Use this for integrating systems on the local machine, like authentication for example.
-developement : dev environment shared
-    * Before you switch to this environment, run "npm run build:dev" in ClientApp/src. Use this for integrating systems on the dev machine, where you can have multiple developers, and other users testing the system.
+    * Before you switch to this environment, run `npm run build:_d` in ClientApp/src. Use this for integrating systems on the local machine, like authentication for example.
+* developement : dev environment shared
+    * Before you switch to this environment, run `npm run build:dev` in ClientApp/src. Use this for integrating systems on the dev machine, where you can have multiple developers, and other users testing the system.
 * staging : staging environment shared
-    * Before you switch to this environment, run "npm run build:staging" in ClientApp/src. Use this for integrating systems on the staging machine, where you test the application on a machine that looks as close to production ready as possible
+    * Before you switch to this environment, run `npm run build:staging` in ClientApp/src. Use this for integrating systems on the staging machine, where you test the application on a machine that looks as close to production ready as possible
 * prod : production environment shared
-    * Before you switch to this environment, run "npm run build:staging" in ClientApp/src. Use this for integrating systems on the production machine.
+    * Before you switch to this environment, run `npm run build:staging` in ClientApp/src. Use this for integrating systems on the production machine.
     
 It is recommended to use the follow modes for the environements:
 * Debug mode for _ and _d
